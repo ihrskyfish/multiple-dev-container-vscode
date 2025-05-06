@@ -11,7 +11,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	},
-	"postCreateCommand": " bash /postCreate.sh",
+	"postCreateCommand": "echo 1111 ; bash  /postCreate.sh",
 	"mounts": [
 		{
 			"source": "${env:HOME}/.m2/repository",

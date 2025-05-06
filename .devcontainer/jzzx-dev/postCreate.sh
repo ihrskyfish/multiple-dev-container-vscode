@@ -2,6 +2,7 @@ echo "postCreate.sh"
 sudo chown -R $(whoami) .
 #show the entity files
 find . -type f | grep entity | grep -v '^./target'
+cat src/main/resources/sql/all.sql | mysql --database mmcc -u root -p1qazXSW@ -h dev0mysql  
 cat ./src/main/resources/sql/*  | mysql --database mmcc -u root -p1qazXSW@ -h dev0mysql  
 # usermod -aG docker vscode
 find -type f -name '*.class'  -iname '*config*' -iname '*api*'
