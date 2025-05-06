@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-mongo
+{
+	"name": "yzzx-web-dev",
+	"dockerComposeFile": "../../docker-compose.yml",
+	"service": "dev0app0frontend",
+	"workspaceFolder": "/workspace/yzzx-web-dev",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mongodb.mongodb-vscode",
+				"zhucan.debug-cline",
+				"Vue.volar",
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"features": {
+	},
+	// not used in devcontainer by docker-compose
+	"containerEnv": {
+		// Add any environment variables you want to set in the container.
+		"NODE_ENV": "development",
+		"NODE_OPTIONS": "--openssl-legacy-provider",
+		"YARN_STRICT_SSL": "false",
+		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin/pnpm",
+	},
+	"remoteEnv": {
+		"NODE_ENV": "development",
+		"NODE_OPTIONS": "--openssl-legacy-provider",
+		"YARN_STRICT_SSL": "false",
+		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin/pnpm",
+	},
+	"userEnvProbe": "loginInteractiveShell",
+	// "mounts": [
+	// 	{
+	// 		"source": "${env:HOME}/.pnpm-store",
+	// 		"target": "${localEnv:HOME}/.pnpm-store",
+	// 		"type": "bind"
+	// 	},
+	// ],
+	// "forwardPorts": [3000, 27017],
+	"postCreateCommand": "echo 1111 ; bash  /postCreate.sh",
+}
