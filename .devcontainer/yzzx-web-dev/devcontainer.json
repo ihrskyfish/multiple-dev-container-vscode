@@ -24,13 +24,13 @@
 		"NODE_ENV": "development",
 		"NODE_OPTIONS": "--openssl-legacy-provider",
 		"YARN_STRICT_SSL": "false",
-		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin/pnpm",
+		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin",
 	},
 	"remoteEnv": {
 		"NODE_ENV": "development",
 		"NODE_OPTIONS": "--openssl-legacy-provider",
 		"YARN_STRICT_SSL": "false",
-		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin/pnpm",
+		"PATH": "${localEnv:PATH}:/usr/local/share/npm-global/bin",
 	},
 	"userEnvProbe": "loginInteractiveShell",
 	// "mounts": [
