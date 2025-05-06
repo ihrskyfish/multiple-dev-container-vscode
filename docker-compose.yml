@@ -20,7 +20,7 @@ services:
   dev0app0backend:
     hostname: dev0app0backend
     build: 
-      context: .devcontainer/jzzx-dev # default is not  dockerfile's path
+      context: .devcontainer/yzzx-dev # default is not  dockerfile's path
       dockerfile: Dockerfile
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
