@@ -12,10 +12,11 @@
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
 	},
 	"postCreateCommand": "echo 1111 ; bash  /postCreate.sh",
+	// this is user for when create container
 	"mounts": [
 		{
 			"source": "${env:HOME}/.m2/repository",
-			"target": "/home/vscode/.m2/repository",
+			"target": "${localEnv:HOME}/.m2/repository",
 			"type": "bind"
 		},
 	],
