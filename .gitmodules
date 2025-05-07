@@ -1,3 +1,6 @@
 [submodule "yzzx-dev"]
 	path = yzzx-dev
 	url = https://github.com/ihrskyfish/yzzx-dev
+[submodule "yzzx-web-dev"]
+	path = yzzx-web-dev
+	url = https://github.com/ihrskyfish/yzzx-web-dev
